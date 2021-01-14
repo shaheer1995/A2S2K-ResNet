@@ -1,4 +1,4 @@
-# Open with Google Colab : https://colab.research.google.com/github/shaheer1995/A2S2K-ResNet/blob/master/A2S2K_ResNet.ipynb
+[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/attention-based-adaptive-spectral-spatial/hyperspectral-image-classification-on-kennedy)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-kennedy?p=attention-based-adaptive-spectral-spatial)
 	
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/attention-based-adaptive-spectral-spatial/hyperspectral-image-classification-on-pavia)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-pavia?p=attention-based-adaptive-spectral-spatial)
