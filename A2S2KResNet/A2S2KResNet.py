@@ -3,26 +3,7 @@
 
 # # Imports
 
-import argparse
-import collections
-import math
-import time
 
-import numpy as np
-import scipy.io as sio
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from sklearn import metrics, preprocessing
-from sklearn.decomposition import PCA
-from sklearn.metrics import confusion_matrix
-
-import geniter
-import record
-import torch_optimizer as optim2
-import Utils
-from torchsummary import summary
 
 # # Setting Params
 
@@ -116,6 +97,16 @@ def load_dataset(Dataset, split=0.9):
         gt_hsi = gt_SV['KSC_gt']
         K = data_hsi.shape[2]
         TOTAL_SIZE = 5211
+        VALIDATION_SPLIT = split
+        TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
+
+    if Dataset == 'WHU_HC':
+        uPavia = sio.loadmat(data_path + 'WHU_Hi_HanChuan.mat')
+        gt_uPavia = sio.loadmat(data_path + 'WHU_Hi_HanChuan_gt.mat')
+        data_hsi = uPavia['WHU_Hi_HanChuan']
+        gt_hsi = gt_uPavia['WHU_Hi_HanChuan_gt']
+        K = 274
+        TOTAL_SIZE = 144788
         VALIDATION_SPLIT = split
         TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
 
